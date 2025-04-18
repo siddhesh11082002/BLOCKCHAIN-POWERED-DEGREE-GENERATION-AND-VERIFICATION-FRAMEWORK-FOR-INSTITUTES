@@ -1,0 +1,49 @@
+/* src/styles/DepartmentStatsTable.css */
+.department-stats-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .stats-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stats-header h3 {
+    margin: 0;
+    color: #1d3557;
+    font-size: 1.2rem;
+  }
+  
+  .table-container {
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .department-stats-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .department-stats-table th,
+  .department-stats-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .department-stats-table th {
+    font-weight: 600;
+    color: #333;
+    background-color: #f5f7fb;
+  }
+  
+  .department-stats-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .department-stats-table tr:hover td {
+    background-color: #f9f9f9;
+  }

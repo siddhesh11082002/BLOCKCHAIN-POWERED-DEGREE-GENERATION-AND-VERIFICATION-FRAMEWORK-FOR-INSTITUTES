@@ -1,0 +1,105 @@
+/* src/styles/StatsOverview.css */
+.stats-overview {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .stats-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stats-header h3 {
+    margin: 0;
+    color: #1d3557;
+    font-size: 1.2rem;
+  }
+  
+  .stats-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stats-chart {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .stats-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .stat-item.pending {
+    background-color: #fff8e1;
+  }
+  
+  .stat-item.queued {
+    background-color: #e1f5fe;
+  }
+  
+  .stat-item.issued {
+    background-color: #e8f5e9;
+  }
+  
+  .stat-icon {
+    font-size: 1.8rem;
+  }
+  
+  .stat-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d3557;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (min-width: 768px) {
+    .stats-content {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .stats-chart {
+      flex: 1;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    
+    .stats-summary {
+      flex: 1;
+    }
+
+    .no-data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        color: #999;
+        text-align: center;
+        font-size: 1.1rem;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+  }

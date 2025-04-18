@@ -1,0 +1,121 @@
+/* src/styles/FileUploader.css */
+.file-uploader {
+    margin-bottom: 20px;
+  }
+  
+  .drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .drop-zone.dragging {
+    background-color: #eaf7ff;
+    border-color: #1976d2;
+  }
+  
+  .drop-zone.has-file {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .upload-icon {
+    font-size: 3rem;
+    color: #1976d2;
+    margin-bottom: 15px;
+  }
+  
+  .upload-message p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .upload-hint {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 10px 0;
+  }
+  
+  .browse-button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .browse-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .file-info {
+    margin-top: 15px;
+  }
+  
+  .file-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .file-size {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .upload-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .upload-button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .upload-button:hover {
+    background-color: #28702a;
+  }
+  
+  .cancel-button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media (min-width: 768px) {
+    .drop-zone {
+      padding: 40px;
+    }
+  }
